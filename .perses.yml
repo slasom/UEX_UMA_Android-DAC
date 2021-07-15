@@ -50,7 +50,7 @@ time_wait: "22m"
 ######### Tests Definition #########
 
 tests:
-  - id: "Test 1"
+  - id: "Test1"
     type: "apipecker"
     config:
       concurrentUsers: 1
@@ -60,7 +60,7 @@ tests:
     expect:
       mean:
         under: 2000
-  - id: "Test 2"
+  - id: "Test2"
     type: "apipecker"
     config:
       concurrentUsers: 1
@@ -70,7 +70,7 @@ tests:
     expect:
       mean:
         under: 2000
-  - id: "Test 3"
+  - id: "Test3"
     type: "apipecker"
     config:
       concurrentUsers: 1
@@ -80,7 +80,7 @@ tests:
     expect:
       mean:
         under: 2000
-  - id: "Test 4"
+  - id: "Test4"
     type: "apipecker"
     config:
       concurrentUsers: 1
@@ -90,7 +90,7 @@ tests:
     expect:
       mean:
         under: 2000
-  - id: "Test 5"
+  - id: "Test5"
     type: "apipecker"
     config:
       concurrentUsers: 1
