@@ -33,8 +33,8 @@ jobs:
           with:
             args: "./gradlew assembleAndroidTest assembleDebug"
 
-        - name: "Check apk"
-          run: ls -l ./app/build/outputs/apk/debug/app-debug.apk
+#        - name: "Check apk"
+#          run: ls -l ./app/build/outputs/apk/debug/app-debug.apk
 #          run: ls -l ./app/build/outputs/apk/debug/
 
         # Build Perses config
@@ -82,47 +82,47 @@ jobs:
           run: |       
             cd .perses_runner
             node index -a setup -g ../.perses-full.yml -c ../.perses-credentials.yml -n ${{steps.generate-project-id.outputs.result}}
-#        - name: "Check project folder"
-#          run: |
-#            cd .perses_runner/projects/${{steps.generate-project-id.outputs.result}}
-#            find
-#        - name: "Perses Launch Infrastructure"
-#          run: |
-#            cd .perses_runner
-#            node index -a launch -n ${{steps.generate-project-id.outputs.result}}
-#        - name: "Perses Test"
-#          run: |
-#            cd .perses_runner
-#            node index -a tests -n ${{steps.generate-project-id.outputs.result}}
-#
-#        - name: "Perses gets logs from virtual devices"
-#          run: |
-#            cd .perses_runner
-#            node index -a getLogs -n ${{steps.generate-project-id.outputs.result}}
-#
-#        - name: "Perses Destroy Infrastructure"
-#          run: |
-#            cd .perses_runner
-#            node index -a destroy -n ${{steps.generate-project-id.outputs.result}}
-#
-#        # Check logs
-#        - name: "Check logs"
-#          run: |
-#            ls -l .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/logs/
-#            ls -l .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/logs/devices-logs
-#
-#        # Gather Test Result
-#        - name: "Gather Performance Test Results"
-#          run: |
-#            cp -r .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/logs/ .perses_gha/check/
-#            cd .perses_gha/check
-#            bash gatherResults.sh
-#
-#        # Check Perses Result
-#        - name: "Check Test Results"
-#          run: |
-#            cp .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/perses-tests.yaml .perses_gha/check/
-#            cd .perses_gha/check
-#            npm install
-#            npm start
+        - name: "Check project folder"
+          run: |
+            cd .perses_runner/projects/${{steps.generate-project-id.outputs.result}}
+            find
+        - name: "Perses Launch Infrastructure"
+          run: |
+            cd .perses_runner
+            node index -a launch -n ${{steps.generate-project-id.outputs.result}}
+        - name: "Perses Test"
+          run: |
+            cd .perses_runner
+            node index -a tests -n ${{steps.generate-project-id.outputs.result}}
+
+        - name: "Perses gets logs from virtual devices"
+          run: |
+            cd .perses_runner
+            node index -a getLogs -n ${{steps.generate-project-id.outputs.result}}
+
+        - name: "Perses Destroy Infrastructure"
+          run: |
+            cd .perses_runner
+            node index -a destroy -n ${{steps.generate-project-id.outputs.result}}
+
+        # Check logs
+        - name: "Check logs"
+          run: |
+            ls -l .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/logs/
+            ls -l .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/logs/devices-logs
+
+        # Gather Test Result
+        - name: "Gather Performance Test Results"
+          run: |
+            cp -r .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/logs/ .perses_gha/check/
+            cd .perses_gha/check
+            bash gatherResults.sh
+
+        # Check Perses Result
+        - name: "Check Test Results"
+          run: |
+            cp .perses_runner/projects/${{steps.generate-project-id.outputs.result}}/perses-tests.yaml .perses_gha/check/
+            cd .perses_gha/check
+            npm install
+            npm start
 
