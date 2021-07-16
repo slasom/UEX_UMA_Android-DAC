@@ -54,21 +54,21 @@ tests:
     config:
       concurrentUsers: 1
       iterations: 4
-      delay: 500
+      delay: 1000
       url: "http://108.129.48.139/temperature?devices=10"
     expect:
       mean:
         under: 2000
-  - id: "Test2"
-    type: "apipecker"
-    config:
-      concurrentUsers: 1
-      iterations: 4
-      delay: 500
-      url: "http://108.129.48.139/temperature?devices=20"
-    expect:
-      mean:
-        under: 2000
+#  - id: "Test2"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 4
+#      delay: 1000
+#      url: "http://108.129.48.139/temperature?devices=20"
+#    expect:
+#      mean:
+#        under: 2000
 #  - id: "Test3"
 #    type: "apipecker"
 #    config:
