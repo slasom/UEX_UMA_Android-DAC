@@ -32,7 +32,7 @@ ami_id: "ami-035966e8adab4aaad"
 devices:
   - id: "Medium Devices"
     type: "mobile"
-    devices: 10
+    devices: 14
     android_version: 10
     hardware:
       cpu: "2"
@@ -69,33 +69,33 @@ tests:
     expect:
       mean:
         under: 2000
-  - id: "Test3"
-    type: "apipecker"
-    config:
-      concurrentUsers: 1
-      iterations: 4
-      delay: 500
-      url: "http://108.129.48.139/temperature?devices=30"
-    expect:
-      mean:
-        under: 2000
-  - id: "Test4"
-    type: "apipecker"
-    config:
-      concurrentUsers: 1
-      iterations: 4
-      delay: 500
-      url: "http://108.129.48.139/temperature?devices=40"
-    expect:
-      mean:
-        under: 2000
-  - id: "Test5"
-    type: "apipecker"
-    config:
-      concurrentUsers: 1
-      iterations: 4
-      delay: 500
-      url: "http://108.129.48.139/temperature?devices=50"
-    expect:
-      mean:
-        under: 2000
+#  - id: "Test3"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 4
+#      delay: 500
+#      url: "http://108.129.48.139/temperature?devices=30"
+#    expect:
+#      mean:
+#        under: 2000
+#  - id: "Test4"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 4
+#      delay: 500
+#      url: "http://108.129.48.139/temperature?devices=40"
+#    expect:
+#      mean:
+#        under: 2000
+#  - id: "Test5"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 4
+#      delay: 500
+#      url: "http://108.129.48.139/temperature?devices=50"
+#    expect:
+#      mean:
+#        under: 2000
