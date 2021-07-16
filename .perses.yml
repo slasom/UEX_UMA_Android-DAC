@@ -46,7 +46,6 @@ application_id: "com.unexuma.mobile_shoppingcenter"
 #For example, for deploy 50 devices, wait 20m '20 minutes'
 time_wait: "5m"
 
-
 ######### Tests Definition #########
 
 tests:
