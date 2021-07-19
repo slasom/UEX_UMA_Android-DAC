@@ -160,8 +160,8 @@ public class MQTTService extends Service {
                      }
 
                     //TODO Choose what type of notification to show (toast or notification in the bar)
-                    showNotification("Resource Execution: "+ eventresponse.getResource()," Method: "+ eventresponse.getMethod());
-                    showToastInIntentService("Resource Execution: "+ eventresponse.getResource() + " | Method: "+ eventresponse.getMethod());
+                    //showNotification("Resource Execution: "+ eventresponse.getResource()," Method: "+ eventresponse.getMethod());
+                    //showToastInIntentService("Resource Execution: "+ eventresponse.getResource() + " | Method: "+ eventresponse.getMethod());
 
                     //Intent, Broadcast, Insert Notification to send and show info to MainActivity to show in ListView
 
@@ -187,8 +187,8 @@ public class MQTTService extends Service {
                      }
 
                     //TODO Choose what type of notification to show (toast or notification in the bar)
-                    showNotification("Resource Execution: "+ statusresponse.getResource()," Method: "+ statusresponse.getMethod());
-                    showToastInIntentService("Resource Execution: "+ statusresponse.getResource() + " | Method: "+ statusresponse.getMethod());
+                    //showNotification("Resource Execution: "+ statusresponse.getResource()," Method: "+ statusresponse.getMethod());
+                   // showToastInIntentService("Resource Execution: "+ statusresponse.getResource() + " | Method: "+ statusresponse.getMethod());
 
                     //Intent, Broadcast, Insert Notification to send and show info to MainActivity to show in ListView
 

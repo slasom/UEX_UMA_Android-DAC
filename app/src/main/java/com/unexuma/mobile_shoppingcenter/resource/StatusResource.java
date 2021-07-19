@@ -115,7 +115,8 @@ public class StatusResource {
           e.printStackTrace();
       }
 
-      client.publishMessage( MQTTService.getClient(), String.valueOf(response),1,statusResponse.getSender());
+      Log.i("send msg to ",statusResponse.getSender()+"|"+response);
+      client.publishMessage(MQTTService.getClient(), String.valueOf(response),1,statusResponse.getSender());
   }
   /**
   * Gets user information
