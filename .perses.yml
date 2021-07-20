@@ -53,7 +53,7 @@ tests:
     type: "apipecker"
     config:
       concurrentUsers: 3
-      iterations: 5
+      iterations: 4
       delay: 1000
       url: "http://108.129.48.139/temperature?devices=10"
     expect:
@@ -63,7 +63,7 @@ tests:
     type: "apipecker"
     config:
       concurrentUsers: 3
-      iterations: 5
+      iterations: 4
       delay: 1000
       url: "http://108.129.48.139/temperature?devices=20"
     expect:
@@ -73,7 +73,7 @@ tests:
     type: "apipecker"
     config:
       concurrentUsers: 3
-      iterations: 5
+      iterations: 4
       delay: 500
       url: "http://108.129.48.139/temperature?devices=30"
     expect:
@@ -83,7 +83,7 @@ tests:
     type: "apipecker"
     config:
       concurrentUsers: 3
-      iterations: 5
+      iterations: 4
       delay: 500
       url: "http://108.129.48.139/temperature?devices=40"
     expect:
@@ -93,7 +93,7 @@ tests:
     type: "apipecker"
     config:
       concurrentUsers: 3
-      iterations: 5
+      iterations: 4
       delay: 500
       url: "http://108.129.48.139/temperature?devices=50"
     expect:
