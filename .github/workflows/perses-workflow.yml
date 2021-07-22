@@ -62,9 +62,8 @@ jobs:
           uses: actions/checkout@v2
           with:
             repository: perses-org/perses-engine
-            token: ${{ secrets.PERSES_PAT }}
+            #token: ${{ secrets.PERSES_PAT }}
             path: .perses_runner
-            #} esto va en la linea 60
 
 
         - name: "Install dependences"
