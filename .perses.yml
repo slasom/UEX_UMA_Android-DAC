@@ -47,7 +47,6 @@ application_id: "com.unexuma.mobile_shoppingcenter"
 time_wait: "20m"
 
 
-
 ######### Tests Definition #########
 
 tests:
