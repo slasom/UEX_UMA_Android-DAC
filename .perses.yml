@@ -50,6 +50,58 @@ time_wait: "20m"
 
 ######### Tests Definition #########
 
+#tests:
+#  - id: "Test1"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 5
+#      delay: 1000
+#      url: "http://108.129.48.139/temperature?devices=10"
+#    expect:
+#      mean:
+#        under: 2000
+#  - id: "Test2"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 5
+#      delay: 1000
+#      url: "http://108.129.48.139/temperature?devices=20"
+#    expect:
+#      mean:
+#        under: 2000
+#  - id: "Test3"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 5
+#      delay: 500
+#      url: "http://108.129.48.139/temperature?devices=30"
+#    expect:
+#      mean:
+#        under: 2000
+#  - id: "Test4"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 5
+#      delay: 500
+#      url: "http://108.129.48.139/temperature?devices=40"
+#    expect:
+#      mean:
+#        under: 2000
+#  - id: "Test5"
+#    type: "apipecker"
+#    config:
+#      concurrentUsers: 1
+#      iterations: 5
+#      delay: 500
+#      url: "http://108.129.48.139/temperature?devices=50"
+#    expect:
+#      mean:
+#        under: 2000
+
 tests:
   - id: "Test1"
     type: "apipecker"
@@ -57,7 +109,7 @@ tests:
       concurrentUsers: 1
       iterations: 5
       delay: 1000
-      url: "http://108.129.48.139/temperature?devices=60"
+      url: "http://3.99.19.181/temperature?devices=10"
     expect:
       mean:
         under: 2000
@@ -67,7 +119,7 @@ tests:
       concurrentUsers: 1
       iterations: 5
       delay: 1000
-      url: "http://108.129.48.139/temperature?devices=60"
+      url: "http://3.99.19.181/temperature?devices=20"
     expect:
       mean:
         under: 2000
@@ -77,7 +129,7 @@ tests:
       concurrentUsers: 1
       iterations: 5
       delay: 500
-      url: "http://108.129.48.139/temperature?devices=60"
+      url: "http://3.99.19.181/temperature?devices=30"
     expect:
       mean:
         under: 2000
@@ -87,7 +139,7 @@ tests:
       concurrentUsers: 1
       iterations: 5
       delay: 500
-      url: "http://108.129.48.139/temperature?devices=60"
+      url: "http://3.99.19.181/temperature?devices=40"
     expect:
       mean:
         under: 2000
@@ -97,7 +149,7 @@ tests:
       concurrentUsers: 1
       iterations: 5
       delay: 500
-      url: "http://108.129.48.139/temperature?devices=60"
+      url: "http://3.99.19.181/temperature?devices=50"
     expect:
       mean:
         under: 2000
